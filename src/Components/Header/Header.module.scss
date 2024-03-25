@@ -1,0 +1,125 @@
+.header{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.headerTop {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  height: 80px;
+  padding: 24px;
+  width: 100%;
+  justify-content: space-between;
+}
+.headerBottom{
+  border: 1px solid #a2a1a0;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px;
+}
+.menuButton {
+  display: flex;
+  background: rgba(21, 81, 229, 1);
+  padding: 12px 24px;
+  gap: 12px;
+  border-radius: 8px;
+  align-items: center;
+  color: white;
+
+  & span {
+    font-size: 14px;
+    font-weight: bolder;
+  }
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  & .line {
+    height: 30px;
+    width: 1px;
+    background: #d7d5d5;
+  }
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d3d1d1;
+  padding: 0 16px;
+  border-radius: 4px;
+  width: 40%;
+  justify-content: space-between;
+
+  & input {
+    border: none;
+    outline: none;
+    padding: 12px;
+
+    &::placeholder {
+      font-weight: bolder;
+      color: black;
+    }
+  }
+
+  & .searchIcons {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}
+
+.cart {
+  background-color: rgba(242, 246, 255, 1);
+  padding: 15px 26px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 5px;
+  white-space: nowrap;
+
+  & span {
+    color: rgba(21, 81, 229, 1);
+    font-weight: bolder;
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  min-width: fit-content;
+  gap: 16px;
+  & span{
+    font-weight: bolder;
+  }
+}
+
+.categories1,.categories2{
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+.categories2{
+  color: rgba(21, 81, 229, 1);
+  align-items: center;
+  & .manager{
+    background-color: rgba(242, 246, 255, 1);
+    padding: 11px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  & .actions{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}
